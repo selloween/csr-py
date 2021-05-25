@@ -1,0 +1,9 @@
+*.cer
+*.key
+*.csr
+*.crt
+*.pem
+*.swp
+*.swo
+config.py
+__pycache__
