@@ -54,10 +54,10 @@ def create_csr(domain, csr_file_path, key_file_path):
 
 def main():
     os.chdir(sys.path[0])
-    print("Please input Domain for CSR request:")
+    print("Please input domain (subject common name):")
     domain = input() 
-    csr_file_path  = "./" + domain + ".csr"
-    key_file_path =  "./" + domain + ".key"
+    csr_file_path  = config['csr_file_path'] + domain + ".csr"
+    key_file_path =  config['key_file_path'] + domain + ".key"
     create_csr(domain, csr_file_path, key_file_path)
 
 main()
